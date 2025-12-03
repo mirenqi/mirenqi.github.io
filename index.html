@@ -1,415 +1,142 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
-  <title>次元桌游狂欢·操场嘉年华 - 桌游社团活动策划</title>
-  <link rel="icon" href="favicon.ico" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#FF3A6E',
-            secondary: '#6C5CE7',
-            dark: '#2D3436',
-            light: '#F8F9FA'
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          },
-        },
-      }
-    }
-  </script>
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .text-shadow {
-        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      }
-      .text-shadow-lg {
-        text-shadow: 0 4px 8px rgba(0,0,0,0.25);
-      }
-      .animate-float {
-        animation: float 3s ease-in-out infinite;
-      }
-      .card-hover {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .card-hover:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px -5px rgba(255, 58, 110, 0.3);
-      }
-    }
-    
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0px); }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桌游社团操场活动策划案</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        p {
+            text-indent: 2em;
+            margin-bottom: 10px;
+        }
+        .content-box {
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .image-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 10px 0;
+        }
+        .image-caption {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+            text-indent: 0;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+    </style>
 </head>
-
-<body class="bg-gradient-to-br from-light to-pink-50 min-h-screen font-sans text-dark">
-  <!-- 顶部英雄区 -->
-  <header class="relative h-[70vh] flex items-center justify-center overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80 z-10"></div>
-    <div class="absolute inset-0 bg-[url('https://picsum.photos/id/1035/1920/1080')] bg-cover bg-center opacity-50"></div>
-    
-    <div class="container mx-auto px-4 z-20 text-center">
-      <h1 class="text-[clamp(2.5rem,8vw,5rem)] font-bold text-white mb-6 text-shadow-lg">
-        次元桌游狂欢<br>
-        <span class="text-[clamp(1.5rem,5vw,3rem)]">操场嘉年华</span>
-      </h1>
-      <p class="text-[clamp(1rem,3vw,1.5rem)] text-white/90 max-w-2xl mx-auto mb-8 text-shadow">
-        青春动漫风 · 互动有趣 · 展示社团特色 · 吸引新成员
-      </p>
-      <a href="#details" class="inline-block bg-white text-primary font-bold py-3 px-8 rounded-full text-lg hover:bg-opacity-90 transition-all transform hover:scale-105">
-        探索详情 <i class="fa fa-chevron-down ml-2"></i>
-      </a>
+<body>
+    <div class="content-box">
+        <h1>桌游社团操场活动策划案</h1>
+        
+        <!-- 社团标志图片 -->
+        <div class="image-container">
+            <img src="images/logo.png" alt="桌游社团标志">
+            <p class="image-caption">桌游社团标志 - 融合卡牌、骰子与棋子元素的设计</p>
+        </div>
+        
+        <h2>一、核心信息</h2>
+        <p>主题：次元桌游狂欢·操场嘉年华</p>
+        <p>地点：学校操场（中心舞台·观众区）</p>
+        <p>调性：青春动漫风、互动有趣</p>
+        <p>目标：展示社团特色、吸引新成员</p>
+        
+        <h2>二、表演环节（总时长19分钟）</h2>
+        
+        <h3>1. 社团走秀（8分钟）</h3>
+        <p>亮点：动漫风格角色还原，融入社团元素</p>
+        <p>流程：20名社员身着经典桌游角色（狼人杀、三国杀）及原创IP服装，搭配专属道具（面具、卡牌），走秀时与观众互动，结尾队列道具组做造型定格。</p>
+        
+        <!-- 角色装扮图片 -->
+        <div class="image-container">
+            <img src="images/character-costume.jpg" alt="社团成员角色装扮">
+            <p class="image-caption">社团成员角色装扮展示 - 融合动漫元素的角色服装</p>
+        </div>
+        
+        <h3>2. 狼人杀舞蹈（6分钟）</h3>
+        <p>亮点：剧情化舞蹈还原游戏进程</p>
+        <p>流程：12名舞者分狼人、村民、神职三组，以电子音乐搭配游戏音效，通过舞蹈演绎「天黑袭击·天亮查验·投票淘汰」剧情，中段引导观众配合安静、举手投票。</p>
+        
+        <!-- 狼人杀场景图片 -->
+        <div class="image-container">
+            <img src="images/werewolf-game.jpg" alt="狼人杀场景">
+            <p class="image-caption">狼人杀游戏场景 - 营造神秘氛围的灯光效果</p>
+        </div>
+        
+        <h3>3. 唱歌表演（5分钟）</h3>
+        <p>亮点：桌游主题金曲联唱</p>
+        <p>流程：3名主唱穿社团文化衫，演唱改编自动漫主题曲、青春歌曲的桌游相关曲目，副歌引导观众合唱，结尾全体表演者上台致意。</p>
+        
+        <!-- 桌游活动现场图片 -->
+        <div class="image-grid">
+            <div>
+                <img src="images/boardgame-session.jpg" alt="桌游活动现场">
+                <p class="image-caption">社团成员参与桌游活动</p>
+            </div>
+            <div>
+                <img src="images/interactive-game.jpg" alt="互动游戏环节">
+                <p class="image-caption">互动游戏环节 - 增强成员参与感</p>
+            </div>
+        </div>
+        
+        <h2>三、配套设计</h2>
+        
+        <h3>1. 舞台布置</h3>
+        <p>主舞台：动漫风格背景板（含社团旗帜、活动主题），搭配霓虹灯、气球装饰</p>
+        <p>观众区：摆放彩色凳子，每座配桌游主题坐垫</p>
+        <p>周边区：舞台一侧陈列社徽徽章、钥匙扣、卡牌等周边</p>
+        
+        <!-- 桌游剧本图片 -->
+        <div class="image-container">
+            <img src="images/boardgame-scripts.jpg" alt="桌游剧本">
+            <p class="image-caption">丰富多样的桌游剧本 - 为活动提供多样化选择</p>
+        </div>
+        
+        <h3>2. 互动与宣传</h3>
+        <p>中场抽奖：抽取观众赠送周边礼品（桌游卡牌、文化衫等）</p>
+        <p>桌游体验区：操场一侧设置简易体验区，引导观众玩UNO、德国心脏病等桌游</p>
+        <p>宣传：前期张贴动漫风海报、发布预告；现场打卡赠小礼品；后期发布活动回顾</p>
     </div>
-    
-    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-light to-transparent"></div>
-  </header>
-
-  <!-- 主内容区 -->
-  <main class="container mx-auto px-4 py-16">
-    <!-- 核心信息部分 -->
-    <section id="details" class="mb-20">
-      <div class="text-center mb-12">
-        <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-primary mb-4">核心信息</h2>
-        <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover">
-          <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-            <i class="fa fa-calendar text-2xl text-primary"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">活动主题</h3>
-          <p class="text-dark/80">次元桌游狂欢·操场嘉年华</p>
-        </div>
-        
-        <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover">
-          <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-            <i class="fa fa-map-marker text-2xl text-primary"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">活动地点</h3>
-          <p class="text-dark/80">学校操场（中心舞台+观众区）</p>
-        </div>
-        
-        <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover">
-          <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-            <i class="fa fa-paint-brush text-2xl text-primary"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">活动调性</h3>
-          <p class="text-dark/80">青春动漫风、互动有趣</p>
-        </div>
-        
-        <div class="bg-white rounded-xl shadow-lg p-8 text-center card-hover">
-          <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-            <i class="fa fa-bullseye text-2xl text-primary"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">活动目标</h3>
-          <p class="text-dark/80">展示社团特色、吸引新成员</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 表演环节 -->
-    <section class="mb-20">
-      <div class="text-center mb-12">
-        <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-primary mb-4">精彩表演环节</h2>
-        <p class="text-dark/70 max-w-2xl mx-auto">总时长19分钟，三大精彩节目，不容错过！</p>
-        <div class="w-24 h-1 bg-primary mx-auto rounded-full mt-4"></div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-        <!-- 社团走秀 -->
-        <div class="relative group">
-          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-primary/80 rounded-xl -z-10"></div>
-          <div class="relative overflow-hidden rounded-xl shadow-xl h-[400px]">
-            <img src="https://picsum.photos/id/1005/600/800" alt="社团走秀" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-              <div class="flex items-center mb-2">
-                <span class="bg-primary text-white text-xs font-bold px-2 py-1 rounded">8分钟</span>
-                <h3 class="text-white text-xl font-bold ml-2">社团走秀</h3>
-              </div>
-              <p class="text-white/90 text-sm">动漫风桌游角色还原，融入社团元素</p>
-            </div>
-          </div>
-          <div class="mt-4 bg-white p-5 rounded-xl shadow-lg">
-            <h4 class="text-primary font-bold mb-2">流程亮点：</h4>
-            <ul class="text-dark/80 space-y-2">
-              <li class="flex items-start">
-                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
-                <span>20名社员身着经典桌游角色（狼人杀、三国杀）及原创IP服装</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
-                <span>搭配专属道具（面具、卡牌），走秀时与观众互动</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
-                <span>结尾排列成社团徽章造型定格</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 狼人杀舞蹈 -->
-        <div class="relative group">
-          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-secondary/80 rounded-xl -z-10"></div>
-          <div class="relative overflow-hidden rounded-xl shadow-xl h-[400px]">
-            <img src="https://picsum.photos/id/1011/600/800" alt="狼人杀舞蹈" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-              <div class="flex items-center mb-2">
-                <span class="bg-secondary text-white text-xs font-bold px-2 py-1 rounded">6分钟</span>
-                <h3 class="text-white text-xl font-bold ml-2">狼人杀舞蹈</h3>
-              </div>
-              <p class="text-white/90 text-sm">剧情化舞蹈还原游戏进程</p>
-            </div>
-          </div>
-          <div class="mt-4 bg-white p-5 rounded-xl shadow-lg">
-            <h4 class="text-secondary font-bold mb-2">流程亮点：</h4>
-            <ul class="text-dark/80 space-y-2">
-              <li class="flex items-start">
-                <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-                <span>12名舞者分狼人、村民、神职三组</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-                <span>以电子音乐搭配游戏音效，演绎「天黑袭击-天亮查验-投票淘汰」剧情</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
-                <span>中段引导观众配合安静、举手投票</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 唱歌表演 -->
-        <div class="relative group">
-          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-primary/80 rounded-xl -z-10"></div>
-          <div class="relative overflow-hidden rounded-xl shadow-xl h-[400px]">
-            <img src="https://picsum.photos/id/1025/600/800" alt="唱歌表演" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-              <div class="flex items-center mb-2">
-                <span class="bg-primary text-white text-xs font-bold px-2 py-1 rounded">5分钟</span>
-                <h3 class="text-white text-xl font-bold ml-2">唱歌表演</h3>
-              </div>
-              <p class="text-white/90 text-sm">桌游主题金曲联唱</p>
-            </div>
-          </div>
-          <div class="mt-4 bg-white p-5 rounded-xl shadow-lg">
-            <h4 class="text-primary font-bold mb-2">流程亮点：</h4>
-            <ul class="text-dark/80 space-y-2">
-              <li class="flex items-start">
-                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
-                <span>3名主唱穿社团文化衫</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
-                <span>演唱改编自动漫主题曲、青春歌曲的桌游相关曲目</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
-                <span>副歌引导观众合唱，结尾全体表演者上台致意</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 配套设计 -->
-    <section>
-      <div class="text-center mb-12">
-        <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-primary mb-4">配套设计</h2>
-        <p class="text-dark/70 max-w-2xl mx-auto">精心布置的场地，丰富多彩的互动体验</p>
-        <div class="w-24 h-1 bg-primary mx-auto rounded-full mt-4"></div>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- 舞台布置 -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-          <div class="h-64 overflow-hidden">
-            <img src="https://picsum.photos/id/1040/800/500" alt="舞台布置" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold text-primary mb-4 flex items-center">
-              <i class="fa fa-star mr-2"></i> 舞台布置
-            </h3>
-            <div class="space-y-4">
-              <div class="flex items-start">
-                <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fa fa-magic text-primary"></i>
-                </div>
-                <div class="ml-4">
-                  <h4 class="font-bold text-dark">主舞台</h4>
-                  <p class="text-dark/70">动漫风格背景板（含社团旗帜、活动主题），搭配霓虹灯、气球装饰</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fa fa-users text-primary"></i>
-                </div>
-                <div class="ml-4">
-                  <h4 class="font-bold text-dark">观众区</h4>
-                  <p class="text-dark/70">摆放彩色凳子，每座配桌游主题坐垫</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div class="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fa fa-shopping-bag text-primary"></i>
-                </div>
-                <div class="ml-4">
-                  <h4 class="font-bold text-dark">周边区</h4>
-                  <p class="text-dark/70">舞台一侧陈列社团徽章、钥匙扣、卡牌等周边</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 互动与宣传 -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-          <div class="h-64 overflow-hidden">
-            <img src="https://picsum.photos/id/1050/800/500" alt="互动与宣传" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold text-primary mb-4 flex items-center">
-              <i class="fa fa-comments mr-2"></i> 互动与宣传
-            </h3>
-            <div class="space-y-4">
-              <div class="flex items-start">
-                <div class="bg-secondary/10 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fa fa-gift text-secondary"></i>
-                </div>
-                <div class="ml-4">
-                  <h4 class="font-bold text-dark">中场抽奖</h4>
-                  <p class="text-dark/70">抽取观众赠送周边礼品（桌游卡牌、文化衫等）</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div class="bg-secondary/10 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fa fa-gamepad text-secondary"></i>
-                </div>
-                <div class="ml-4">
-                  <h4 class="font-bold text-dark">桌游体验区</h4>
-                  <p class="text-dark/70">操场一侧设置简易体验区，引导观众玩UNO、德国心脏病等桌游</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div class="bg-secondary/10 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fa fa-bullhorn text-secondary"></i>
-                </div>
-                <div class="ml-4">
-                  <h4 class="font-bold text-dark">宣传</h4>
-                  <p class="text-dark/70">前期张贴动漫风海报、发布预告；现场打卡赠小礼品；后期发布活动回顾</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 倒计时区域 -->
-    <section class="mt-20 bg-gradient-to-r from-primary to-secondary text-white p-8 md:p-12 rounded-2xl shadow-xl">
-      <div class="text-center">
-        <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-6">活动即将开始</h2>
-        <div class="flex justify-center space-x-4 md:space-x-8">
-          <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4 w-16 md:w-24">
-            <div id="days" class="text-2xl md:text-4xl font-bold">00</div>
-            <div class="text-sm md:text-base">天</div>
-          </div>
-          <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4 w-16 md:w-24">
-            <div id="hours" class="text-2xl md:text-4xl font-bold">00</div>
-            <div class="text-sm md:text-base">时</div>
-          </div>
-          <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4 w-16 md:w-24">
-            <div id="minutes" class="text-2xl md:text-4xl font-bold">00</div>
-            <div class="text-sm md:text-base">分</div>
-          </div>
-          <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4 w-16 md:w-24">
-            <div id="seconds" class="text-2xl md:text-4xl font-bold">00</div>
-            <div class="text-sm md:text-base">秒</div>
-          </div>
-        </div>
-        <a href="#" class="inline-block mt-8 bg-white text-primary font-bold py-3 px-8 rounded-full text-lg hover:bg-opacity-90 transition-all transform hover:scale-105">
-          预约提醒 <i class="fa fa-bell ml-2"></i>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <!-- 页脚 -->
-  <footer class="bg-dark text-white py-10 mt-20">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-6 md:mb-0">
-          <div class="text-2xl font-bold text-primary mb-2">次元桌游社团</div>
-          <p class="text-white/70">打造最有趣的桌游体验</p>
-        </div>
-        <div class="flex space-x-6">
-          <a href="#" class="text-white/70 hover:text-primary transition-colors">
-            <i class="fa fa-weibo text-2xl"></i>
-          </a>
-          <a href="#" class="text-white/70 hover:text-primary transition-colors">
-            <i class="fa fa-wechat text-2xl"></i>
-          </a>
-          <a href="#" class="text-white/70 hover:text-primary transition-colors">
-            <i class="fa fa-instagram text-2xl"></i>
-          </a>
-          <a href="#" class="text-white/70 hover:text-primary transition-colors">
-            <i class="fa fa-twitter text-2xl"></i>
-          </a>
-        </div>
-      </div>
-      <div class="border-t border-white/10 mt-8 pt-8 text-center text-white/50">
-        <p>&copy; 2025 次元桌游社团. 保留所有权利.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // 倒计时功能
-    function updateCountdown() {
-      const targetDate = new Date();
-      targetDate.setDate(targetDate.getDate() + 7); // 假设活动在7天后
-      
-      const now = new Date();
-      const diff = targetDate - now;
-      
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-      
-      document.getElementById('days').innerText = days.toString().padStart(2, '0');
-      document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
-      document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
-      document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
-    }
-    
-    // 初始化倒计时
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-    
-    // 平滑滚动
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
 </body>
 </html>
